@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/corazon.png" type="image/x-icon">
+    <title>Mayuu</title>
+    
+</head>
+<body onclick="PlayAudio()">
+    <audio id="musica" autoplay loop>
+        <source src="img/colors.mp3" type="audio/mpeg">
+        Tu navegador no admite la reproducción de audio.
+      </audio>
+      
+      <script>
+        function PlayAudio () {
+          document.getElementById("musica").play();
+          document.getElementById("musica").volume = 0.30;
+        };
+        window.onload = PlayAudio();
+      </script>
+      
+      
+      <script>
+        var audio = document.getElementById("musica");
+        audio.addEventListener("canplaythrough", function () {
+          audio.volume = 0.7; 
+          audio.play(); 
+        });
+      </script>
+      
+      
+    <img src="img/mayuu.jpg" id="imagen-responsive">
+
+
+    <div class="greetings">
+
+        <span>M</span>
+        <span>A</span>
+        <span>Y</span>
+        <span>U</span>
+        <span>U</span>
+        
+    </div>
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="description">
+        <span>Gracias por este mes de felicidad :3</span><br>
+        <center> <span>Te quiero mucho <3 </span></center>
+    </div>
+    <div class="button">
+        <button>
+            <a href="FLORES.html">Una flor para otra flor</a>
+        </button>
+        
+    </div>
+</body>
+</html>
